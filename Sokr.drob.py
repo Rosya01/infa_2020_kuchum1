@@ -1,4 +1,4 @@
-def ReduceFraction(n, m):
+def ReduceFraction(n, m): 
     p1 = max(n, m)
     p2 = min(n, m)
     if p1 == p2 and p1 * p2 != 0:
