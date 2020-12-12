@@ -3,10 +3,4 @@ def MinDivisor(n):
         if n % i == 0:
             return i
     return n
-
-
-def main():
-    n = int(input())
-    print(MinDivisor(n))
-if __name__ == "__main__":
-    main()
+print(MinDivisor(n))
