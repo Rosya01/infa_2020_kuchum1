@@ -1,6 +1,10 @@
-def power(a, n):
-    if n == 0:
-        return 1
+def zxc(a1, n1):
+    if n1 > 1:
+        a1 = a1 * zxc(a1, n1 - 1)
     else:
-        return a * power(a, n - 1)
-print(power(int(input("число= ")), int(input("степень= "))))
+        a1 = a1 ** n1
+    return a1
+
+
+a, n = float(input()), float(input())
+print(zxc(a, n))

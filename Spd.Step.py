@@ -1,13 +1,12 @@
-def SpdStep(a, n):
-    return (1 if n == 0
-            else SpdStep(a * a, n // 2)
-            if n % 2 == 0
-            else a * SpdStep(a, n - 1))
+def power(a, n):
+    if n == 0:
+        return 1
+    elif n % 2 == 1:
+        return power(a, n - 1) * a
+    else:
+        return power(a**2, n // 2)
 
 
-def main():
-    a = int(input())
-    n = int(input())
-    print(SpdStep(a, n))
-if __name__ == "__main__":
-    main()
+a = float(input())
+n = int(input())
+print(power(a, n))
