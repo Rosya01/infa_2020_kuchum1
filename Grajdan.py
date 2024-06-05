@@ -20,3 +20,8 @@ while i < len(nT):
     else:
         k += 1
 print(*result)
+
+
+
+
+print (я жив) 
